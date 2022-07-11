@@ -11703,16 +11703,39 @@ html[dir=rtl] .product-single__meta .rte{
 
 {% comment %} custom css {% endcomment %}
 
-@media only screen and (max-width: 766px){
-  .custom-header{
-    background-color:red;
-  }
-  .custom-header-flex{
-    background-color:green
-  }
+.search-icon{
+  display:flex;
+  align-items:center;
+}
 
+.custom-header-flex{
+  display:flex;
+  justify-content:space-between;
+  margin: 0 auto;
+  width:1170px;
+}
+
+@media only screen and (max-width: 1260px){
+  .custom-header-flex{
+    width: 100%
+  }
+}
+
+@media only screen and (max-width: 768px){
+  
   .custom-header-flex-center{
     display:none
   }
 
+  .flex-main-logo{
+    order: 2
+  }
+
+  .header-flex-dropdown{
+    order: 1
+  }
+
+  .search-icon{
+    order: 3
+  }
 } 

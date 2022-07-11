@@ -118,7 +118,7 @@
             data-logo-align="{{ logo_alignment }}">
 
             {%- if logo_alignment == 'left' -%}
-              <div class="header-item header-item--logo">
+              <div class="header-item header-item--logo flex-main-logo">
                 {%- render 'header-logo-block', section: section -%}
               </div>
             {%- endif -%}
@@ -135,7 +135,7 @@
                   {%- if settings.search_enable -%}
                     <div class="site-nav small--hide">
                       <a href="{{ routes.search_url }}" class="site-nav__link site-nav__link--icon js-search-header">
-                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64"><path d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"/></svg>
+                        <svg aria-hidden="true" focusable="false" role="presentation" class=" icon icon-search" viewBox="0 0 64 64"><path d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"/></svg>
                         <span class="icon__fallback-text">{{ 'general.search.title' | t }}</span>
                       </a>
                     </div>
@@ -168,9 +168,9 @@
               {%- endif -%}
             {%- endif -%}
 
-            <div class="custom-header-flex-icons header-item header-item--icons">
+            
               {%- render 'header-icons', section: section -%}
-            </div>
+            
           </div>
 
           {%- if section.settings.main_menu_alignment == 'center' -%}

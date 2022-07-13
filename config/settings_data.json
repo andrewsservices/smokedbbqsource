@@ -83,13 +83,22 @@
             "type": "logo",
             "settings": {
               "logo": "shopify:\/\/shop_images\/SBS-logos_horizontal_version-smallpng_2.webp",
-              "desktop_logo_width": 140,
+              "desktop_logo_width": 160,
               "mobile_logo_width": 110
+            }
+          },
+          "b9ce826f-4cf4-404b-b4b2-47df654075e5": {
+            "type": "announcement",
+            "settings": {
+              "text": "Free shipping",
+              "link_text": "On all orders over $50",
+              "link": ""
             }
           }
         },
         "block_order": [
-          "1524770014057"
+          "1524770014057",
+          "b9ce826f-4cf4-404b-b4b2-47df654075e5"
         ],
         "settings": {
           "main_menu_link_list": "andys-main-menu",
@@ -110,35 +119,56 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "978db470-2aa1-495b-9cda-0568d693f939": {
+            "type": "custom",
+            "settings": {
+              "show_footer_title": true,
+              "title": "",
+              "image": "shopify:\/\/shop_images\/SBS-logos_horizontal_version-smallpng_2.webp",
+              "text": "<p>Get BBQ guides, recipes, and out free digital cookbook sent straight to your inbox.<\/p>",
+              "container_width": 20
+            }
+          },
           "1494301487049": {
             "type": "menu",
             "settings": {
-              "show_footer_title": false,
-              "menu": "footer",
+              "show_footer_title": true,
+              "menu": "explore",
               "container_width": 25
             }
           },
-          "1494292487693": {
+          "8e9bb49c-1ce4-4556-bdb2-281fb7b4d4b6": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": true,
+              "menu": "company",
+              "container_width": 25
+            }
+          },
+          "5eaa5b96-aebd-4f84-9194-fb552de06ff5": {
+            "type": "menu",
+            "settings": {
+              "show_footer_title": true,
+              "menu": "get-help",
+              "container_width": 25
+            }
+          },
+          "bb0d7fce-d933-41c3-bb04-2c5b2881f317": {
             "type": "newsletter",
             "settings": {
               "show_footer_title": true,
-              "title": "Sign up and save",
-              "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
-              "container_width": 33
-            }
-          },
-          "1494301487048": {
-            "type": "logo_social",
-            "settings": {
-              "desktop_logo_height": 50,
-              "container_width": 95
+              "title": "",
+              "text": "",
+              "container_width": 25
             }
           }
         },
         "block_order": [
+          "978db470-2aa1-495b-9cda-0568d693f939",
           "1494301487049",
-          "1494292487693",
-          "1494301487048"
+          "8e9bb49c-1ce4-4556-bdb2-281fb7b4d4b6",
+          "5eaa5b96-aebd-4f84-9194-fb552de06ff5",
+          "bb0d7fce-d933-41c3-bb04-2c5b2881f317"
         ],
         "settings": {
           "show_locale_selector": true,

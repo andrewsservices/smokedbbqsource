@@ -3807,20 +3807,18 @@ ul+.footer__small-text{
 
 .footer__title{
   color:{{ settings.color_footer_text | default: "#fff" }};
-  color:var(--colorFooterText)
+  color:var(--colorFooterText);
+  font-size: 20px;
 }
-
-@media only screen and (min-width:769px){
 
 .footer__title{
-    margin-bottom:20px
+    margin-bottom:30px
 }
-  }
 
 @media only screen and (max-width:768px){
 
 [data-center-text=true] .footer__title{
-    text-align:center
+    text-align:left
 }
   }
 
@@ -3837,7 +3835,6 @@ ul+.footer__small-text{
 .footer__newsletter{
   position:relative;
   display:inline-block;
-  max-width:300px;
   width:100%;
 }
 
@@ -11714,7 +11711,22 @@ html[dir=rtl] .product-single__meta .rte{
   -webkit-transform: rotate(45deg);
 }
 
-.search-icon{
+.navigation-flex{
+  height: 100%;
+  display:flex;
+  align-items:center;
+}
+
+.height-one-hundred-percent{
+  height: 100%;
+}
+
+.customer-icon{
+  display:flex;
+  align-items:center;
+}
+
+.cart-icon, .search-icon{
   display:flex;
   align-items:center;
 }
@@ -11727,7 +11739,6 @@ html[dir=rtl] .product-single__meta .rte{
 }
 
 .header-dropdown-link{
-  height:73px;
   display:flex;
   align-items:center;
 }
@@ -11742,6 +11753,45 @@ html[dir=rtl] .product-single__meta .rte{
   color:white
 }
  
+
+.hide-items{
+  display:none
+}
+
+.footer-flex{
+  width: 84%;
+  margin-left: 6%;
+  display:flex;
+  justify-content:space-around;
+  text-align:left;
+}
+
+.footer-menu-column a{
+  font-size: 16px;
+  color: #e24b25 
+}
+
+.footer-padding{
+  padding: 40px 0;
+}
+
+.footer-first-column{
+  width: 35%;
+  display:flex;
+  flex-direction:column;
+}
+
+.footer-first-column p{
+  font-size: 16px;
+}
+
+.footer-menu-column{
+  width: 15%;
+  font-weight:bold
+}
+
+
+
 @media only screen and (max-width: 1260px){
   .custom-header-flex{
     width: 100%
@@ -11749,31 +11799,45 @@ html[dir=rtl] .product-single__meta .rte{
 }
 
 
-.hide-items{
-  display:none
+@media only screen and (max-width: 1025px){
+  .footer-flex{
+    flex-direction:column;
+    margin-left: 0;
+  }
+  .footer-first-column,.footer-menu-column{
+    width: 100%;
+    margin: 30px 0;
+  }
 }
 
 
-
-
-
-
-
 @media only screen and (max-width: 768px){
-  
-  .custom-header-flex-center{
-    display:none
+  .custom-header-flex{
+    justify-content:center;
   }
 
-  .flex-main-logo{
-    order: 2
-  }
+
+
+ .custom-header-flex-center{
+  display:none;
+ }
+
 
   .header-flex-dropdown{
     order: 1
   }
 
-  .search-icon{
-    order: 3
+  .flex-main-logo{
+    margin: 0 auto;
+    order: 2
   }
+
+  .search-icon{
+    order:3;
+  }
+
+.cart-icon{
+  order: 4
+}
+  
 } 

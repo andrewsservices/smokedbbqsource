@@ -52,7 +52,7 @@
                 }
               </style>
               <div>
-                <p class="h4 footer__title small--hide"></p>
+                {% comment %} <p class="h4 footer__title small--hide"></p> {% endcomment %}
                 {% comment %} <button type="button" class="h4 footer__title collapsible-trigger collapsible-trigger-btn medium-up--hide"
                   aria-controls="Footer-978db470-2aa1-495b-9cda-0568d693f939" aria-expanded="false">
 
@@ -67,19 +67,10 @@
                 {% comment %} <div id="Footer-978db470-2aa1-495b-9cda-0568d693f939" class="collapsible-content collapsible-content--small">
                   <div class="collapsible-content__inner">
                     <div class="footer__collapsible"> {% endcomment %}
-                      <div class="image-wrap text-spacing" style="height: 0; padding-bottom: 37.75%;"><img
-                          class="lazyautosizes lazyloaded" data-widths="[360, 540, 720, 900, 1080, 1600]"
-                          data-aspectratio="2.6490066225165565" data-sizes="auto" role="presentation" alt=""
-                          data-srcset="//cdn.shopify.com/s/files/1/0584/7154/6980/files/SBS-logos_horizontal_version-smallpng_2_360x.webp?v=1656306827 360w, //cdn.shopify.com/s/files/1/0584/7154/6980/files/SBS-logos_horizontal_version-smallpng_2_540x.webp?v=1656306827 540w, //cdn.shopify.com/s/files/1/0584/7154/6980/files/SBS-logos_horizontal_version-smallpng_2_720x.webp?v=1656306827 720w, //cdn.shopify.com/s/files/1/0584/7154/6980/files/SBS-logos_horizontal_version-smallpng_2_900x.webp?v=1656306827 900w, //cdn.shopify.com/s/files/1/0584/7154/6980/files/SBS-logos_horizontal_version-smallpng_2_1080x.webp?v=1656306827 1080w, //cdn.shopify.com/s/files/1/0584/7154/6980/files/SBS-logos_horizontal_version-smallpng_2_1600x.webp?v=1656306827 1600w"
-                          sizes="191px"
-                          srcset="//cdn.shopify.com/s/files/1/0584/7154/6980/files/SBS-logos_horizontal_version-smallpng_2_360x.webp?v=1656306827 360w, //cdn.shopify.com/s/files/1/0584/7154/6980/files/SBS-logos_horizontal_version-smallpng_2_540x.webp?v=1656306827 540w, //cdn.shopify.com/s/files/1/0584/7154/6980/files/SBS-logos_horizontal_version-smallpng_2_720x.webp?v=1656306827 720w, //cdn.shopify.com/s/files/1/0584/7154/6980/files/SBS-logos_horizontal_version-smallpng_2_900x.webp?v=1656306827 900w, //cdn.shopify.com/s/files/1/0584/7154/6980/files/SBS-logos_horizontal_version-smallpng_2_1080x.webp?v=1656306827 1080w, //cdn.shopify.com/s/files/1/0584/7154/6980/files/SBS-logos_horizontal_version-smallpng_2_1600x.webp?v=1656306827 1600w">
-                        <noscript>
-                          <img class="lazyloaded"
-                            src="//cdn.shopify.com/s/files/1/0584/7154/6980/files/SBS-logos_horizontal_version-smallpng_2_400x.webp?v=1656306827"
-                            alt="">
-                        </noscript>
-                      </div>
-                      <p>Get BBQ guides, recipes, and out free digital cookbook sent straight to your inbox.</p>
+                      
+                      <img src="{{'logo-black.jpg'|asset_img_url: '1000x'}}"/>
+                      
+                      <p class="letter-spacing-negative-point-zero-five" style="color: rgba(255,255,255,0.79)">Get BBQ guides, recipes, and out free digital cookbook sent straight to your inbox.</p>
                     {% comment %} </div>
                   </div>
                 </div> {% endcomment %}
@@ -116,7 +107,7 @@
                 }
               </style>
               <div>
-                <p class="h4 footer__title small--hide"></p>
+                {% comment %} <p class="h4 footer__title small--hide"></p> {% endcomment %}
                 {% comment %} <button type="button" class="h4 footer__title collapsible-trigger collapsible-trigger-btn medium-up--hide"
                   aria-controls="Footer-bb0d7fce-d933-41c3-bb04-2c5b2881f317" aria-expanded="false">
 
@@ -133,25 +124,25 @@
                     <div class="footer__collapsible"> {% endcomment %}
                       <form method="post" action="/contact#newsletter-footer" id="newsletter-footer" accept-charset="UTF-8"
                         class="contact-form"><input type="hidden" name="form_type" value="customer"><input type="hidden" name="utf8"
-                          value="✓"><label for="Email-bb0d7fce-d933-41c3-bb04-2c5b2881f317" class="hidden-label">Enter your
-                          email</label>
+                          value="✓"><label for="Email-bb0d7fce-d933-41c3-bb04-2c5b2881f317" class="hidden-label">Enter email</label>
                         <input type="hidden" name="contact[tags]" value="prospect,newsletter">
                         <input type="hidden" name="contact[context]" value="footer">
                         <div class="footer__newsletter">
-                          <input type="email" value="" placeholder="Enter your email" name="contact[email]"
+                          <input type="email" value="" placeholder="Enter email" name="contact[email]"
                             id="Email-bb0d7fce-d933-41c3-bb04-2c5b2881f317" class="footer__newsletter-input" autocorrect="off"
                             autocapitalize="off">
-                          <button type="submit" class="footer__newsletter-btn" name="commit" aria-label="Subscribe">
-                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-email"
+                          <button type="submit" class="footer__newsletter-btn" name="commit" aria-label="Subscribe">SIGN UP
+                            {% comment %} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-email"
                               viewBox="0 0 64 64">
                               <path d="M63 52H1V12h62zM1 12l25.68 24h9.72L63 12M21.82 31.68L1.56 51.16m60.78.78L41.27 31.68"></path>
-                            </svg>
-                            <span class="footer__newsletter-btn-label">
+                            </svg> {% endcomment %}
+                            {% comment %} <span class="footer__newsletter-btn-label">
                               Subscribe
-                            </span>
+                            </span> {% endcomment %}
                           </button>
                         </div>
                       </form>
+                      <p style="margin-top:25px; letter-spacing: -.05rem; font-size: 20px;font-weight:bolder">Get Social</p>
                       <ul class="no-bullets social-icons footer__social">
                         <li>
                           <a target="_blank" rel="noopener" href="https://www.instagram.com/smokedbbqsource"
@@ -261,7 +252,7 @@
 
                       }
                     </style>
-                    <p class="h4 footer__title">
+                    <p class="h4 footer__title letter-spacing-negative-point-zero-five">
                       Explore
                     </p>
                     {% comment %} <button type="button"
@@ -279,7 +270,7 @@
                     {% comment %} <div id="Footer-1494301487049" class="collapsible-content collapsible-content--small">
                       <div class="collapsible-content__inner">
                         <div class="footer__collapsible"> {% endcomment %}
-                          <ul class="no-bullets site-footer__linklist">
+                          <ul class="no-bullets site-footer__linklist letter-spacing-negative-point-zero-five">
                             <li><a href="/">Recipes</a></li>
                             <li><a href="/">Barbeque Guides</a></li>
                             <li><a href="/">Grill Guides</a></li>
@@ -313,7 +304,7 @@
 
                   }
                 </style>
-                <p class="h4 footer__title">
+                <p class="h4 footer__title letter-spacing-negative-point-zero-five">
                   Company
                 </p>
                 {% comment %} <button type="button" class="h4 footer__title collapsible-trigger collapsible-trigger-btn medium-up--hide"
@@ -330,7 +321,7 @@
                 {% comment %} <div id="Footer-8e9bb49c-1ce4-4556-bdb2-281fb7b4d4b6" class="collapsible-content collapsible-content--small">
                   <div class="collapsible-content__inner">
                     <div class="footer__collapsible"> {% endcomment %}
-                      <ul class="no-bullets site-footer__linklist">
+                      <ul class="no-bullets site-footer__linklist letter-spacing-negative-point-zero-five">
                         <li><a href="/">About Us</a></li>
                         <li><a href="/">Jobs</a></li>
                         <li><a href="/">Editorial Guidlines</a></li>
@@ -364,7 +355,7 @@
 
                     }
                   </style>
-                  <p class="h4 footer__title">
+                  <p class="h4 footer__title letter-spacing-negative-point-zero-five">
                     Get Help
                   </p>
                   {% comment %} <button type="button"
@@ -383,7 +374,7 @@
                     class="collapsible-content collapsible-content--small">
                     <div class="collapsible-content__inner">
                       <div class="footer__collapsible"> {% endcomment %}
-                        <ul class="no-bullets site-footer__linklist">
+                        <ul class="no-bullets site-footer__linklist letter-spacing-negative-point-zero-five">
                           <li><a href="/">Contact Us</a></li>
                           <li><a href="/">Advertising Inquiries</a></li>
                         </ul>
